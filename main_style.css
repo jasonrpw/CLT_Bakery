@@ -1,0 +1,192 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+  background:#4A9ED4;
+}
+h1 {
+	text-align: center;
+	font-family: "alex-brush";
+	font-size: 48px;
+}
+h2 {
+	text-align: center;
+	font-family:"alex-brush";
+	font-size: 36px;
+}
+p {
+	text-align:center;
+	font-size: 38px;
+	font-family: "alex-brush";
+}
+
+.size_1 {
+	font-size: 36px;
+}
+.facts{
+	font-size: 22px;
+}
+.BY {
+  margin: auto;
+  width: auto;
+}
+.auto {
+  text-align: left;
+  font-size: 18px;
+}
+.a {
+	font-size: 22px;
+	text-align: center;
+	text-decoration: none;
+	color: aliceblue;
+}
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color:#CCC73B;
+  color: white;
+}
+.container {
+  position: relative;
+ 
+}
+
+.image {
+	display: block;
+  margin-left: auto;
+  margin-right: auto;
+  
+  border-style: ridge;
+	border-color: #C6C94B;
+	border-bottom-color: brown;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transform-ms-: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #CCC73B;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+.sidenav {
+  width: 130px;
+  z-index: 1;
+  top: 20px;
+  left: 10px;
+  background: #2A2A2A;
+  overflow-x: hidden;
+  padding: 8px 0;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #ddd;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #064579;
+}
+
+.main {
+  margin-left: 140px; /* Same width as the sidebar + left position in px */
+  font-size: 28px; /* Increased text to enable scrolling */
+  padding: 1px 10px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  float: left;
+  width: 32.98%;
+  padding: 2px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.dropbtn {
+  background-color: #C6C94B;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color:black;
+}
+
